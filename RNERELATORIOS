@@ -1,0 +1,43 @@
+## 8. Regras de negócio preliminares
+
+1. Cada bombeiro deverá possuir uma matrícula única.
+2. Um bombeiro não poderá registrar uma segunda entrada enquanto houver um turno em aberto, salvo procedimento autorizado para correção.
+3. A saída deverá estar relacionada a um registro de entrada.
+4. Uma ocorrência deverá possuir identificação própria e registrar sua situação atual.
+5. Uma viatura em manutenção não deverá ser considerada disponível para designação.
+6. Alterações em horários e ocorrências deverão ser rastreáveis.
+7. A designação de equipes deverá respeitar as regras operacionais e a autorização dos responsáveis.
+
+## 9. Relatórios esperados
+
+O sistema deverá permitir gerar consultas e relatórios como:
+
+- Relação de bombeiros em serviço em determinado momento.
+- Histórico de entradas e saídas por bombeiro e período.
+- Escalas previstas e registros efetivamente realizados.
+- Ocorrências abertas, em atendimento e encerradas.
+- Viaturas disponíveis, em uso e em manutenção.
+- Situação dos equipamentos cadastrados.
+
+## 10. Perguntas para completar o levantamento
+
+Antes de iniciar o desenvolvimento, será necessário confirmar com os responsáveis pela corporação:
+
+1. Como os horários de entrada e saída são registrados atualmente?
+2. Os turnos possuem horários fixos ou variam conforme a equipe?
+3. Como são organizadas as equipes e quem pode alterar sua composição?
+4. Como uma ocorrência é recebida, registrada, priorizada e encerrada?
+5. Quem autoriza a designação de equipes e viaturas?
+6. Quais informações e relatórios são necessários para o comando?
+7. O sistema será utilizado em um quartel ou em várias unidades?
+8. Será necessário registrar faltas, atrasos, trocas de turno e horas extras?
+9. Os bombeiros terão acesso ao sistema por computador, celular ou ambos?
+10. O sistema deverá funcionar integrado a algum sistema já utilizado pela corporação?
+
+## 11. Conclusão
+
+O levantamento preliminar demonstra a necessidade de um sistema capaz de centralizar informações sobre profissionais, horários de serviço, equipes, ocorrências, viaturas e equipamentos.
+
+A implementação dessas funcionalidades poderá facilitar a organização administrativa, melhorar a consulta dos registros e apoiar o acompanhamento dos recursos disponíveis.
+
+As informações deste documento representam uma proposta inicial baseada nos problemas descritos. Antes de utilizar o sistema em atividades reais, será necessário validar os requisitos com a corporação e observar suas normas, seus protocolos de emergência e suas exigências de segurança. O sistema proposto tem função de apoio e não substitui os meios oficiais de despacho e comunicação de emergências.

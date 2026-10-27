@@ -1,0 +1,125 @@
+# Levantamento de Dados — Sistema de Gerenciamento para Bombeiros
+
+## 1. Tema do projeto
+
+**Desenvolvimento de um sistema de gerenciamento de serviços, equipes e ocorrências para o Corpo de Bombeiros.**
+
+## 2. Objetivo do sistema
+
+O sistema tem como objetivo auxiliar na organização administrativa e operacional dos bombeiros, permitindo registrar horários de entrada e saída do serviço, organizar equipes, acompanhar ocorrências de emergência e controlar a disponibilidade de viaturas e equipamentos.
+
+A proposta é centralizar as informações em um único sistema, facilitando o acesso aos dados e contribuindo para uma melhor organização das atividades da corporação.
+
+## 3. Problemas identificados
+
+Com base nas necessidades apresentadas, foram identificados os seguintes problemas que o sistema pretende solucionar:
+
+**3.1. Controle de horário dos bombeiros**
+
+A necessidade de registrar os horários de entrada e saída dos bombeiros, consultar quem está de serviço e manter um histórico dos turnos realizados.
+
+**3.2. Organização de equipes**
+
+A necessidade de organizar os bombeiros em equipes, identificar suas funções e consultar quais profissionais estão disponíveis para o serviço.
+
+**3.3. Gerenciamento de emergências**
+
+A necessidade de registrar ocorrências, como incêndios, acidentes e resgates, mantendo informações sobre o local, o tipo de atendimento, a prioridade e a situação atual.
+
+**3.4. Disponibilidade de viaturas**
+
+A necessidade de acompanhar quais viaturas estão disponíveis, em uso ou em manutenção, evitando que recursos indisponíveis sejam considerados prontos para atendimento.
+
+**3.5. Controle de equipamentos**
+
+A necessidade de registrar equipamentos utilizados pela corporação, suas condições e sua disponibilidade para as atividades operacionais.
+
+**3.6. Acompanhamento das informações**
+
+A necessidade de consultar rapidamente os registros de serviço, as ocorrências em andamento e os recursos disponíveis, facilitando a organização administrativa.
+
+## 4. Dados que deverão ser coletados
+
+### 4.1. Cadastro de bombeiros
+
+| Campo | Descrição |
+|---|---|
+| ID | Identificador único do bombeiro |
+| Nome completo | Nome do profissional |
+| Matrícula | Número de identificação funcional |
+| Função | Cargo ou atividade desempenhada |
+| Equipe | Equipe à qual está associado |
+| Situação | Ativo, afastado ou inativo |
+
+### 4.2. Registro de entrada e saída
+
+| Campo | Descrição |
+|---|---|
+| ID do registro | Identificador do registro de serviço |
+| Bombeiro | Profissional relacionado ao registro |
+| Data do serviço | Dia em que o turno será realizado |
+| Horário de entrada | Momento em que o serviço foi iniciado |
+| Horário de saída | Momento em que o serviço foi encerrado |
+| Turno | Identificação do turno previsto |
+| Observações | Justificativas para ajustes ou ocorrências no registro |
+
+Esses dados permitirão consultar o histórico de horários, identificar registros incompletos e verificar quem está registrado como estando em serviço.
+
+### 4.3. Cadastro de equipes
+
+| Campo | Descrição |
+|---|---|
+| ID da equipe | Identificador único |
+| Nome da equipe | Nome ou código da equipe |
+| Responsável | Profissional responsável pela equipe |
+| Integrantes | Bombeiros associados |
+| Turno | Período previsto de atuação |
+| Situação | Ativa ou inativa |
+
+### 4.4. Registro de ocorrências de emergência
+
+| Campo | Descrição |
+|---|---|
+| ID da ocorrência | Identificador único |
+| Tipo de ocorrência | Incêndio, acidente, resgate ou outro |
+| Data e horário | Momento do registro |
+| Endereço | Local da ocorrência |
+| Descrição | Informações fornecidas sobre a situação |
+| Prioridade | Classificação definida pelo protocolo da corporação |
+| Equipe designada | Equipe responsável pelo atendimento |
+| Viatura designada | Veículo destinado à ocorrência |
+| Status | Aberta, em atendimento, encerrada ou cancelada |
+| Horário de encerramento | Momento em que o atendimento foi finalizado |
+
+### 4.5. Cadastro de viaturas
+
+| Campo | Descrição |
+|---|---|
+| ID da viatura | Identificador único |
+| Identificação ou placa | Identificação do veículo |
+| Tipo | Caminhão de combate a incêndio, ambulância ou outro |
+| Situação | Disponível, em uso ou em manutenção |
+| Quilometragem | Registro de quilometragem, quando aplicável |
+| Manutenção | Histórico de manutenções e revisões |
+
+### 4.6. Cadastro de equipamentos
+
+| Campo | Descrição |
+|---|---|
+| ID do equipamento | Identificador único |
+| Nome | Nome do equipamento |
+| Categoria | Tipo de equipamento |
+| Quantidade | Quantidade registrada |
+| Condição | Em condições de uso, danificado ou em manutenção |
+| Local de armazenamento | Local onde o equipamento está guardado |
+
+## 5. Usuários do sistema
+
+O sistema poderá possuir diferentes perfis de acesso:
+
+- **Administrador:** gerencia cadastros, usuários e configurações.
+- **Comandante ou responsável operacional:** acompanha equipes, escalas, recursos e ocorrências.
+- **Bombeiro:** consulta informações autorizadas e realiza registros de serviço conforme sua permissão.
+
+A definição final das permissões deverá ser validada com a corporação responsável.
+
